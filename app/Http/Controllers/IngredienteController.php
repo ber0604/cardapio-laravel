@@ -24,7 +24,6 @@ class IngredienteController extends Controller{
 
         unset($data['_token']);
 
-
         DB::table('ingredientes')->insert($data);
 
         return redirect('/ingrediente ');

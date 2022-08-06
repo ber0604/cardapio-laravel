@@ -2,6 +2,8 @@
 
 @section('container')
 <a class="btn btn-success mb-2" href="/ingrediente/create">Novo ingrediente</a>
+<a class="btn btn-primary mb-2" href="/cardapio">Ver Cardápio</a>
+<a class="btn btn-primary mb-2" href="/refeicao">Adicionar Refeição</a>
 <table class="table table-dark">
     <thead>
         <tr>

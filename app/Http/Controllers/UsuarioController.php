@@ -22,7 +22,7 @@ class UsuarioController extends Controller
             // Tenta o login
             if (Auth::attempt($credenciais)) {
                 session()->regenerate();
-                return redirect('/cardapio');
+                return view('cardapio.index');
             } else {
                 return redirect()
                     ->route('login')
@@ -31,10 +31,9 @@ class UsuarioController extends Controller
         }
         return view('login');
     }
-    public function logout() {
+    public function logout()
+    {
         Auth::logout();
         return redirect('login');
-      }
-
-
+    }
 }
